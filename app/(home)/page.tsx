@@ -1,11 +1,10 @@
 import Movie from "../../components/movie";
 import styles from "../../styles/home.module.css";
+import { API_URL } from "../contants";
 
 export const metadata = {
   title: "Home",
 };
-
-export const API_URL = process.env.API_URL_ENV;
 
 async function getMovies() {
   const res = await fetch(API_URL);
